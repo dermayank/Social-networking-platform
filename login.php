@@ -2,7 +2,7 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="login.css">
+<link rel="stylesheet" type="text/css" href="log.css">
 <head>
 
 <?php
@@ -53,36 +53,44 @@
         }
     }
 ?>
-
+<hr>
 <div class="container">
     <div class="omb_login">
-    	<h3 class="omb_authTitle">Login or <a href="register.php">Sign up</a></h3>
-
 		<div class="row omb_row-sm-offset-3">
 			<div class="col-xs-12 col-sm-6">
-			    <form action="" method="POST">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2 class="omb_authTitle">Login or <a href="register.php">Sign up</a></h2>
+            			   <form action="" method="POST">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                                        <input type="text" class="form-control" name="useremail" placeholder="Username or Email" >
+                                    </div>
+                                 </div>
+            					<span class="help-block"></span>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="useremail" placeholder="Username or Email" >
-                     </div>
-					<span class="help-block"></span>
+            					<div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-blue"></i></span>
+            						    <input  type="password" class="form-control" name="password" placeholder="Password">
+                                    </div>
+            					</div>
+                                <span class="help-block"></span>
 
-					<div class="form-group">
-						<input  type="password" class="form-control" name="password" placeholder="Password">
-					</div>
-                    <span class="help-block"></span>
+            					<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+            				</form>
 
-					<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-				</form>
-			</div>
-    	</div>
-		<div class="row omb_row-sm-offset-3">
-
-			<div class="col-xs-12 col-sm-3">
-				<p class="omb_forgotPwd">
-					<a href="#">Forgot password?</a>
-				</p>
-			</div>
-		</div>
+                    		<div class="row omb_row-sm-offset-3">
+                    			<div class="col-xs-12 col-sm-12">
+                    				<p class="omb_forgotPwd">
+                    					<a href="reset.php">Forgot password?</a>
+                    				</p>
+                    		</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
 </div>
