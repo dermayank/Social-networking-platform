@@ -1,0 +1,27 @@
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: white;
+    padding: 2px 2px 2px 4px;
+    margin-bottom:  -10px;
+}
+.offline_dot {
+  margin-left: 2%;
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.online_dot {
+  margin-left: 2%;
+  height: 8px;
+  width: 8px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}

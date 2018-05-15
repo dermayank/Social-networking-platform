@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
+}
+
+.omb_forgotPwd {
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+     .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}
+}
